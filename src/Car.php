@@ -1,6 +1,6 @@
 <?php
 class Car {
-  private $nbWheels = 10;
+  private $nbWheels = 4;
   private $currentSpeed;
   private $color;
   private $nbSeats;
