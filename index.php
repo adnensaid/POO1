@@ -1,9 +1,12 @@
 <?php
 require_once 'src/Car.php';
-$peugeot = new Car();
-$peugeot->setColor('red');
-$peugeot->forward();
-echo "my car ". $peugeot->getColor() ." has a speed of : ". $peugeot->getCurrentSpeed() . "KM/H\n";
-echo $peugeot->forward();
-echo $peugeot->brake();
+require_once 'src/Truck.php';
+require_once 'src/Bicycle.php';
+echo "***** TRUCK *****\n";
+$truck = new Truck('pink', 8, 'electric', 10);
+echo $truck->isFull();
+echo $truck->forward();
+echo $truck->brake();
+
+
 
