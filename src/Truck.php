@@ -29,7 +29,7 @@ class Truck extends Vehicle{
     public function isFull(): string
     {
         $sentence = "";
-        while($this->capacity > 0) {
+        while($this->capacity > $this->loading) {
             $this->capacity--;
             $sentence .= "in filling \n";
         }
